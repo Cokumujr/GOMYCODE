@@ -1,0 +1,91 @@
+
+body {
+    background-color: #121212;
+    color:beige;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background:url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+ .hero  p , h1 {
+    color: white;
+    text-align: justify;
+    width: 600px;
+}
+.menu-item {
+    margin-bottom: 30px;
+}
+.about-img{
+    width:100%;
+    height:auto;
+
+}
+.gallery{
+    width:100%;
+    background: url(images/img_1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.gallery p{
+    font-weight: bold;
+    color:beige;
+}
+
+.Contact {
+    width: 100%;
+    background: url(images/subscribe.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px; 
+}
+
+.Contact form {
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px; 
+    width: 100%;
+}
+
+.Contact .form-group {
+    margin-bottom: 15px; 
+}
+
+.Contact .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff; 
+}
+
+.Contact .form-control {
+    width:100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+}
