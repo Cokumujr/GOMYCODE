@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Blog</title>
+    <link href="output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Header Section -->
+    <header class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">My Blog</h1>
+            <nav class="space-x-4">
+                <a href="#home" class="hover:underline">Home</a>
+                <a href="#about" class="hover:underline">About</a>
+                <a href="#contact" class="hover:underline">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Featured Posts Section -->
+    <section class="container mx-auto py-2 my-2 max-h-dvh" id="home">
+        <h2 class="text-2xl font-bold mb-4 text-center">Featured Posts</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white p-4 rounded-lg shadow-lg ">
+                <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmxvZ3xlbnwwfHwwfHx8MA%3D%3D" alt="Post Image" class="w-full h-48 object-cover rounded-t-lg">
+                <h3 class="text-xl font-bold mt-4">Post Title 1</h3>
+                <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fGJsb2d8ZW58MHx8MHx8fDA%3D" alt="Post Image" class="w-full h-48 object-cover rounded-t-lg">
+                <h3 class="text-xl font-bold mt-4">Post Title 2</h3>
+                <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-lg">
+                <img src="https://images.unsplash.com/photo-1504805572947-34fad45aed93?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fGJsb2d8ZW58MHx8MHx8fDA%3D" alt="Post Image" class="w-full h-48 object-cover rounded-t-lg">
+                <h3 class="text-xl font-bold mt-4">Post Title 3</h3>
+                <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Section -->
+    <section class="container mx-auto py-8 ">
+        <h2 class="text-2xl font-bold mb-4 text-center">Categories</h2>
+        <div class="flex flex-wrap gap-2 justify-center">
+            <span class="bg-blue-500 text-white px-3 py-1 rounded-full">Philosophy</span>
+            <span class="bg-green-500 text-white px-3 py-1 rounded-full">Sports</span>
+            <span class="bg-red-500 text-white px-3 py-1 rounded-full">Politics & Government</span>
+            <span class="bg-yellow-500 text-white px-3 py-1 rounded-full">Religion</span>
+        </div>
+    </section>
+
+    <!-- Recent Posts Section -->
+    <section class="container mx-auto py-8" id="About">
+        <h2 class="text-2xl font-bold mb-4">Recent Posts</h2>
+        <div class="bg-white p-4 rounded-lg shadow-lg">
+            <ul>
+                <li class="border-b border-gray-200 py-2">
+                    <a href="#" class="text-xl font-bold hover:underline">Recent Post 1</a>
+                    <span class="block text-gray-500 text-sm">Published on Jan 1, 2024</span>
+                </li>
+                <li class="border-b border-gray-200 py-2">
+                    <a href="#" class="text-xl font-bold hover:underline">Recent Post 2</a>
+                    <span class="block text-gray-500 text-sm">Published on Jan 2, 2024</span>
+                </li>
+                <li class="border-b border-gray-200 py-2">
+                    <a href="#" class="text-xl font-bold hover:underline">Recent Post 3</a>
+                    <span class="block text-gray-500 text-sm">Published on Jan 3, 2024</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Newsletter Subscription Form -->
+    <section class="container mx-auto py-8" id="contact">
+        <h2 class="text-2xl font-bold mb-4 text-center">Subscribe to Our Newsletter</h2>
+        <form class="bg-white p-4 rounded-lg shadow-lg">
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700 text-center">Email Address</label>
+                <input type="email" id="email" class="w-full mt-2 p-2 border border-gray-300 rounded-lg text-center" placeholder="Enter your email">
+            </div>
+        <div class="flex justify-center">
+            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-lg ">Subscribe</button>
+        </div>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto text-center">
+            <div class="mb-4">
+                <a href="#" class="mx-2 hover:underline"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="#" class="mx-2 hover:underline"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="#" class="mx-2 hover:underline"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
+            <p>&copy; 2024 My Blog. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
