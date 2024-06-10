@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Store Landing Page</title>
+    <!-- Linking to Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .hero img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-light py-4">
+        <div class="container">
+            <!-- Logo -->
+            <div class="text-center">
+                <h1 class="display-4">My Store</h1>
+            </div>
+            <div class="text-center">
+                <h2 class="display-4">The time? we got you!</h2>
+            </div>
+        </div>
+    </header>
+    <section class="hero bg-dark text-light container-fluid py-5">
+        <div class="row">
+            <div class="col-lg-6 d-flex flex-column justify-content-center">
+                <h2 class="p-3">NEW ARRIVALS</h2>
+                <p class="p-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur elit quam, ultricies vitae rutrum a, iaculis eu lacus. Phasellus tincidunt at eros eget fringilla. Nam ullamcorper nunc ac arcu commodo rhoncus. Fusce congue nibh id fringilla ultricies. Aliquam erat volutpat. Integer rutrum ex id nisi pulvinar posuere. Nam augue tellus, malesuada vitae tincidunt id, efficitur in quam.
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyVIM3K2LwmEvzRtKzQbUYRCve1WlMdP5uyg&usqp=CAU" alt="product watch" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section id="products" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Products</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 d-flex justify-content-center">
+                <!-- Product Card 1 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyQ2010EXjFstRaBI-XqHNPfOWATl_zCsE4w&usqp=CAU" class="card-img-top" alt="Product 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Product 1</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <button class="btn btn-primary">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card 2 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQStlhmfK_i-olsABOXovtneXAOJVAotMGovw&usqp=CAU" class="card-img-top" alt="Product 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Product 1</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <button class="btn btn-primary">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Card 3 -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROmemIgkG7mcF9ZXo8DCcTGiyrXLcitprC5g&usqp=CAU" class="card-img-top" alt="Product 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Product 1</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <button class="btn btn-primary">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Your Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
