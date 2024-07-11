@@ -1,0 +1,60 @@
+
+
+.cart {
+    background-color: burlywood;
+    width: 400px;
+    margin: 0 auto;
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+} 
+
+.cart-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+}
+
+.quantity button {
+    width: 30px;
+    height: 30px;   
+    font-size: 16px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.quantity-value {
+    margin: 0 10px;
+}
+
+.like-btn {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 20px;
+}
+
+
+
+.delete-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.item-total {
+    font-weight: bold;
+}
