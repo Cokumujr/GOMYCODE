@@ -1,0 +1,18 @@
+.App{
+    text-align: center;
+    margin-top: 20px;
+    background-color: rgba(36, 6, 6, 0.1) ;
+}
+
+
+
+.card {
+    background-color: #c5c3c3;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px; 
+    margin: 20px auto; 
+  } 
+
