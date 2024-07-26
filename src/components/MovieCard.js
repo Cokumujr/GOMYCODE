@@ -1,7 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 
-const MovieCard = ({ title, description, posterURL, rating }) => {
+const MovieCard = ({ id, title, description, posterURL, rating }) => {
     const imagestyle ={
         width: '100%',
         height: 'auto',
@@ -16,6 +17,9 @@ const MovieCard = ({ title, description, posterURL, rating }) => {
         <h3>{title}</h3>
         <p>{description}</p>
         <span>Rating: {rating}</span>
+        <h4>
+        <Link to={`/movie/${id}`}>View Details</Link>
+      </h4>
       </div>
     );
   };
