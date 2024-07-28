@@ -1,0 +1,49 @@
+.header, .footer {
+  background-color: #1e1e1e; /* Darker background */
+  padding: 20px;
+  text-align: center;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.card {
+  background: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.button {
+  background-color: #9c27b0; /* Purple */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #7b1fa2; /* Darker purple */
+}
+
+.nav {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  gap: 1rem; /* Space out items */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav a {
+  color: #9c27b0; /* Purple */
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
