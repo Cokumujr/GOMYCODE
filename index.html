@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mongodb vs SQL</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="slide active" id="slide1">
+        <h1>MongoDB vs SQL Databases</h1>
+        <h2>Presented by Cokumu Junior</h2>
+        <button onclick="showSlide(2)">Next</button>
+    </div>
+
+    <div class="slide" id="slide2">
+        <h2>What is SQL?</h2>
+        <p>SQL (Structured Query Language) databases are relational databases that use tables to store data. They are based on a schema with predefined columns and data types.</p>
+        <ul>
+            <li>Examples: MySQL, PostgreSQL, Oracle, SQL Server</li>
+            <li>Key Features:</li>
+            <li>Structured schema</li>
+            <li>ACID transactions</li>
+            <li>Data integrity</li>
+            <li>SQL querying language</li>
+        </ul>
+        <button onclick="showSlide(1)">Previous</button>
+        <button onclick="showSlide(3)">Next</button>
+    </div>
+
+    <div class="slide" id="slide3">
+        <h2>What is MongoDB?</h2>
+        <p>MongoDB is a NoSQL document-oriented database that stores data in JSON-like documents. It is designed for flexibility and scalability.</p>
+        <ul>
+            <li>Key Features:</li>
+            <li>Schema-less design</li>
+            <li>Document-oriented storage</li>
+            <li>Horizontal scalability</li>
+            <li>Rich query language</li>
+        </ul>
+        <button onclick="showSlide(2)">Previous</button>
+        <button onclick="showSlide(4)">Next</button>
+    </div>
+
+    <div class="slide" id="slide4">
+        <div>
+            <h2>MongoDB vs SQL Databases</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Aspect</th>
+                        <th>SQL</th>
+                        <th>MongoDB</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Schema</td>
+                        <td>Fixed schema</td>
+                        <td>Flexible schema</td>
+                    </tr>
+                    <tr>
+                        <td>Data Model</td>
+                        <td>Relational (tables with rows and columns)</td>
+                        <td>Document-oriented (JSON-like documents)</td>
+                    </tr>
+                    <tr>
+                        <td>Scalability</td>
+                        <td>Vertical scaling (upgrading hardware)</td>
+                        <td>Horizontal scaling (sharding)</td>
+                    </tr>
+                    <tr>
+                        <td>Query Language</td>
+                        <td>SQL (Structured Query Language)</td>
+                        <td>BSON-based query language</td>
+                    </tr>
+                    <tr>
+                        <td>Use Cases</td>
+                        <td>Applications requiring complex transactions and data integrity</td>
+                        <td>Applications requiring flexible data models and scalability</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button onclick="showSlide(3)">Previous</button>
+            <button onclick="showSlide(5)">Next</button>
+        </div>
+    </div>
+
+    <div class="slide" id="slide5">
+        <h2>Summary and Conclusion</h2>
+        <ul>
+            <li>Key Takeaways:</li>
+            <li>SQL databases are ideal for structured data and complex queries with strong ACID properties.</li>
+            <li>MongoDB is suitable for applications with unstructured data, high scalability needs, and flexible schemas.</li>
+            <li>Choosing the Right Database: Consider the application requirements, data model, and scalability needs when choosing between SQL and MongoDB.</li>
+        </ul>
+        <button onclick="showSlide(4)">Previous</button>
+    </div>
+    
+    <script>
+        function showSlide(slideNumber) {
+            const slides = document.querySelectorAll('.slide');
+            slides.forEach((slide, index) => {
+                slide.classList.toggle('active', index + 1 === slideNumber);
+            });
+        }
+    </script>
+</body>
+</html>
